@@ -7,9 +7,16 @@ html
       nav
           div.container
               h2 ROCK, PAPER, SCISSORS
-                  li.nav-item
-                      a.nav-link(href="/register") Register
-                  li.nav-item
-                      a.nav-link(href="/login") Login
+              ul.nav.justify-content-end.main-nav
+                  if user
+                      li.nav-item
+                        a.nav-link(href="#") Hello #{user.username}
+                      li.nav-item
+                        a.nav-link(href="/logout") Logout
+                  else
+                      li.nav-item
+                        a.nav-link(href="/register") Register
+                      li.nav-item
+                        a.nav-link(href="/login") Login
       div.container
           block content
