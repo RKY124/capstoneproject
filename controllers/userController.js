@@ -31,3 +31,15 @@ module.exports.logout = function(req, res){
 module.exports.renderChoices = async function(req, res){
     res.render('easy/viewAll');
 };
+
+module.exports.renderResult = async function(req, res){
+    res.render('easy/view');
+};
+
+module.exports.renderResultPaper = async function(req, res){
+    res.render('easy/viewPaper');
+};
+
+module.exports.renderResultScissors = async function(req, res){
+    res.render('easy/viewScissors');
+};
