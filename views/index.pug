@@ -4,6 +4,9 @@ block content
   h1= title
   div.container
     ul.nav.justify-content-end.main-nav
+      if user
         li.nav-item
           a.nav-link(href="/viewAll") Easy
+      else
+        h2 Please Login To Play
   div.container
