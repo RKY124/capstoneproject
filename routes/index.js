@@ -13,4 +13,5 @@ router.get('/login', userController.renderLogin);
 router.post('/login', userController.login);
 router.get('/logout', userController.logout);
 
+router.get('/viewAll', userController.renderChoices);
 module.exports = router;

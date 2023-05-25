@@ -27,3 +27,7 @@ module.exports.logout = function(req, res){
     req.logout();
     res.redirect('/login');
 };
+
+module.exports.renderChoices = async function(req, res){
+    res.render('easy/viewAll');
+};
