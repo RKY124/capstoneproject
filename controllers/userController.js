@@ -43,3 +43,11 @@ module.exports.renderResultPaper = async function(req, res){
 module.exports.renderResultScissors = async function(req, res){
     res.render('easy/viewScissors');
 };
+
+module.exports.renderChoicesMedium = async function(req, res){
+    res.render('medium/choices');
+};
+
+module.exports.renderResultMedium = async function(req, res){
+    res.render('medium/result');
+};
